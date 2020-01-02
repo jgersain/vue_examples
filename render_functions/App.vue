@@ -1,10 +1,12 @@
 <template lang="pug">
   .app.text-center.m-20
-    button.bg-transparent.text-blue-700.font-semibold.py-2.px-4.border.border-blue-500.rounded(
+    h1.font-bold Render functions
+    hr.m-5
+    button.bg-transparent.text-blue-700.font-semibold.py-2.px-4.border.border-blue-500.rounded.m-1(
       class='hover:bg-blue-500 hover:text-white hover:border-transparent'
       @click.prevent="toggleHandler"
     )
-      | Mostrar mensaje
+      | {{ show ? 'Ocultar modal' : 'Mostrar modal' }}
     transition(name="fade")
       modal-jsx(
         :show="show"

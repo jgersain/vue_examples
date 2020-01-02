@@ -14,19 +14,19 @@ export default {
             {this.$slots.default}
           </div>
           <div class="flex justify-center p-3">
-            <button class="text-white bg-red-500 py-2 px-4 m-1" onClick={this.clickCancelHandler}>Cancelar</button>
-            <button class="text-white bg-blue-500 py-2 px-4 m-1" onClick={this.clickOkHandler}>Ok</button>
+            <button class="text-white bg-red-500 py-2 px-4 m-1" onClick={this.clickCancelHandler}>
+              Cancelar
+            </button>
+            <button class="text-white bg-blue-500 py-2 px-4 m-1" onClick={this.clickOkHandler}>
+              Ok
+            </button>
           </div>
         </div> 
       : null
   },
   methods: {
-    clickCancelHandler () {
-      alert("Se presiono el botón de cancelar")
-    },
-    clickOkHandler () {
-      alert("Se presiono el botón de ok")
-    }
+    clickCancelHandler: () => alert('Botón de cancelar presionado'),
+    clickOkHandler: () => alert('Botón de ok presionado'),
   }
 }
 </script>
