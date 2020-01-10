@@ -15,3 +15,7 @@ VueJS recomienda utilizar plantillas, pero hay algunos casos en los que es neces
 ### Componentes controlados
 
 Los componentes controlados son utiles cuando se requiere abstraer la lógica interna de un componente para que este pueda ser aprovechado. [Ejemplo](https://github.com/jgersain/vue_examples/tree/master/controlled_components)
+
+### Renderizado de lista
+
+Util cuando queremos representar una lista de elementos o componentes basada en un arreglo o matriz. [Ejemplo](https://github.com/jgersain/vue_examples/tree/master/list_rendering)
