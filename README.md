@@ -20,9 +20,9 @@ Los componentes controlados son utiles cuando se requiere abstraer la lógica in
 
 Útil cuando queremos representar una lista de elementos o componentes basada en un arreglo o matriz. [Ejemplo](https://github.com/jgersain/vue_examples/tree/master/list_rendering)
 
-#### Proyecto de ejemplo
+#### Proyecto de ejemplo utilizando Vuex
 
-Proyecto completo utilizando VueJS, componentes y los conceptos principales del framework.
+Proyecto completo utilizando Vuex, componentes y los conceptos principales del framework. Vuex permite emitir eventos o acceder a dotos de la aplicaión desde un estado global.
 [Proyecto](https://github.com/jgersain/vue_examples/tree/master/gersain_app)
 
 
