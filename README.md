@@ -18,4 +18,11 @@ Los componentes controlados son utiles cuando se requiere abstraer la lógica in
 
 ### Renderizado de lista
 
-Util cuando queremos representar una lista de elementos o componentes basada en un arreglo o matriz. [Ejemplo](https://github.com/jgersain/vue_examples/tree/master/list_rendering)
+Útil cuando queremos representar una lista de elementos o componentes basada en un arreglo o matriz. [Ejemplo](https://github.com/jgersain/vue_examples/tree/master/list_rendering)
+
+#### Proyecto de ejemplo
+
+Proyecto completo utilizando VueJS, componentes y los conceptos principales del framework.
+[Proyecto](https://github.com/jgersain/vue_examples/tree/master/gersain_app)
+
+
