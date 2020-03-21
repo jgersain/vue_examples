@@ -1,13 +1,21 @@
 <template>
   <header>
     <h1>Header component</h1>
-    <button>Show Modal</button>
+    <button @click.prevent="getLogin">Show Modal</button>
   </header>
 </template>
 
 <script>
 export default {
   name: 'HeaderPartial',
+  methods: {
+    getLogin() {
+      this.$store.dispatch('TOGGLE_MODAL_STATE', {
+        name: 'login',
+        value: true,
+      });
+    },
+  },
 };
 </script>
 
