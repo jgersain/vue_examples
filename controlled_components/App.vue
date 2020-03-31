@@ -4,31 +4,10 @@
       <h1 class="text-4xl text-center mb-12 font-thin">Controlled components</h1>
       <div class="bg-white rounded-lg overflow-hidden shadow-2xl">
         <div class="p-8">
-          <form @submit.prevent="suscribeNewsletter">
-            <div class="mb-5">
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-600">
-                Email
-              </label>
-              <input
-                id="email"
-                class="block w-full p-3 rounded bg-gray-200 border border-transparent focus:outline-none"
-                type="text"
-                v-model="form.email"
-                name="email"
-                placeholder="john@connor.org">
-            </div>
-            <div class="mb-4">
-              <label class="block text-grey font-bold flex items-center">
-                <toggle-input v-model="form.newsletter" />
-                <span class="text-sm">
-                  ¡Enviarme promociones!
-                </span>
-              </label>
-            </div>
-            <div class="mb-4">
-              <button class="w-full bg-teal-400 text-white p-3 mt-4 rounded shadow hover:bg-teal-500">Registrar</button>
-            </div>
-          </form>
+          <controlled-form 
+            @submit="suscribeNewsletter"
+            :model="form"
+          />
         </div>
       </div>
     </div>
@@ -36,7 +15,7 @@
 </template>
 
 <script>
-import ToggleInput from './ToggleInput.vue';
+import ControlledForm from './ControlledForm';
 
 export default {
   name: 'App',
@@ -45,7 +24,7 @@ export default {
       form: {
         email: '',
         newsletter: false,
-      }
+      },
     };
   },
   methods: {
@@ -54,7 +33,7 @@ export default {
     },
   },
   components: {
-    ToggleInput,
+    ControlledForm,
   },
 };
 </script>
